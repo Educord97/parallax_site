@@ -273,7 +273,10 @@
     <!--Start of Tawk.to Script-->
 <script type="text/javascript">
   
-  var clientID = '';
+
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function callChat(){
+    var clientID = '';
 var hostName = window.location.host;
  
   if(hostName.startsWith("site-parallax.netlify.app")) {
@@ -289,8 +292,6 @@ var hostName = window.location.host;
     callChat();
 
   }
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function callChat(){
 var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
 s1.async=true;
 s1.src='https://embed.tawk.to/' + clientID;
