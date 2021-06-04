@@ -272,21 +272,22 @@
     
     <!--Start of Tawk.to Script-->
 <script type="text/javascript">
-var clientID = '';
+
 var hostName = window.location.host;
  
   if(hostName.startsWith("site-parallax.netlify.app")) {
-     clientID = '60534aa2f7ce182709316ee1/1f12ln3lp';
+     var clientID = '60534aa2f7ce182709316ee1/1f12ln3lp';
     
 
   } else if(hostName.startsWith("parallax-site-2.netlify.app")) {
-      clientID = '6054d1e7067c2605c0ba4ff9/1f15l7sc2';
+      var clientID = '6054d1e7067c2605c0ba4ff9/1f15l7sc2';
     
 
   } else if(hostName.startsWith("parallax-tres.netlify.app")) {
-      clientID = '6082c3b262662a09efc170c8/1f3vcosiq';
+      var clientID = '6082c3b262662a09efc170c8/1f3vcosiq';
     
-
+  } else if(clientId = ''){
+    
   }
 
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
