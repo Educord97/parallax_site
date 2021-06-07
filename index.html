@@ -274,16 +274,18 @@
 <script type="text/javascript">
   
  var hostName = window.location.host;
- var clientID = '';
+ var clientID1 = '';
+  var clientID2 = '';
+  var clientID3 = '';
   
   if(hostName.startsWith("site-parallax.netlify.app")) {
-     clientID = '60534aa2f7ce182709316ee1/1f12ln3lp';
+     clientID1 = '60534aa2f7ce182709316ee1/1f12ln3lp';
      
   } else if(hostName.startsWith("parallax-site-2.netlify.app")) {
-      clientID = '6054d1e7067c2605c0ba4ff9/1f15l7sc2';
+      clientID2 = '6054d1e7067c2605c0ba4ff9/1f15l7sc2';
     
   } else if(hostName.startsWith("parallax-tres.netlify.app")) {
-      clientID = '6082c3b262662a09efc170c8/1f3vcosiq';
+      clientID3 = '6082c3b262662a09efc170c8/1f3vcosiq';
   }
 
 
@@ -292,7 +294,7 @@ var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
   
 var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
 s1.async=true;
-//s1.src='https://embed.tawk.to/' + clientID;
+s1.src='https://embed.tawk.to/' + clientID1 || clientID2 || clientID3;
 s1.charset='UTF-8';
 s1.setAttribute('crossorigin','*');
 s0.parentNode.insertBefore(s1,s0);
