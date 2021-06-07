@@ -276,7 +276,7 @@
  var hostName = window.location.host;
  var clientID1 = '';
  var clientID2 = '';
-  var clientID3 = '';
+ var clientID3 = '';
   
   
   if(hostName.startsWith("site-parallax.netlify.app")) {
@@ -287,9 +287,6 @@
     
   } else if(hostName.startsWith("parallax-tres.netlify.app")) {
       clientID3 = '6082c3b262662a09efc170c8/1f3vcosiq';
-  }
-  else if(clientID === '') {
-      clientID = '6082c3b262662a09efc170c8/1f3vcosiq';
   }
 
 
@@ -315,7 +312,9 @@ s0.parentNode.insertBefore(s1,s0);
   
   else if(clientID3) {
 s1.src='https://embed.tawk.to/' + clientID3;
-
+    s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
     }
   
 })();
